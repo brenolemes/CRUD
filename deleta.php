@@ -7,10 +7,12 @@
     <title>Deleta</title>
 </head>
 <body>
-        <form method="POST" action="deleta_bd.php">
-            <label>Quem deseja deletar:</label> 
-            <input type="text" name="id_deleta" placeholder="Digite o ID do cliente para deletar..." required> <br>
-            <input type="submit" value="Deletar">
-        </form>
+    <form method="POST" action="deleta_bd.php">
+        <label>Quem deseja deletar:</label> 
+        <input type="text" name="id_deleta" placeholder="Digite o ID do cliente para deletar..." required> <br>
+        <input type="submit" value="Deletar">
+    </form>
+    <hr>
+    <a href="menu.php">Voltar</a>
 </body>
 </html>

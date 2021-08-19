@@ -11,21 +11,31 @@
 
     require "conexao.php";
 
-    $id_consulta = $_POST["id_consulta"];
+    $sqlcon = "SELECT id, nome, email, nascimento, endereco, celular FROM clientes";
 
-    $sqld = "SELECT * FROM clientes
-    WHERE id = $id_consulta";
+    $resultado = mysqli_query($con, $sqlcon);
 
-    //Arrumar para mostrar os dados do cliente
-    if (mysqli_query($con, $sqld)) {
-        echo "Todos os dados do cliente com o ID $id_consulta";
-    }else {
-        echo "Erro ao consultar os dados! " . mysqli_error($con);
+    while($exibe = mysqli_fetch_row($resultado)) {
+        echo "<hr>";
+        echo "<table>"; 
+            echo  "<tr><td>ID:</td>";
+            echo "<td>".$exibe[0]."</td></tr>";
+            echo  "<tr><td>Nome:</td>";
+            echo "<td>".$exibe[1]."</td></tr>";
+            echo  "<tr><td>Email:</td>";
+            echo "<td>".$exibe[2]."</td></tr>";
+            echo  "<tr><td>Nascimento:</td>";
+            echo "<td>".$exibe[3]."</td></tr>";
+            echo  "<tr><td>Endereco:</td>";
+            echo "<td>".$exibe[4]."</td></tr>";
+            echo  "<tr><td>Celular:</td>";
+            echo "<td>".$exibe[5]."</td></tr>";
+        echo "</table>";
     }
-
+  
     mysqli_close($con);
-
     ?>
+
     <hr>
     <a href="menu.php">Voltar</a>
 </body>

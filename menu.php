@@ -7,12 +7,13 @@
     <title>Menu</title>
 </head>
 <body>
-    <a href="consulta.php">Consultar</a>
+    <a href="consulta_bd.php">Consultar os dados dos clientes cadastrados</a> 
     <br>
-    <a href="cadastro.php">Cadastrar</a> 
+    <a href="cadastro.php">Cadastrar um novo cliente</a> 
     <br>
-    <a href="atualiza.php">Atualizar</a>
+    <a href="atualiza.php">Atualizar um cliente</a> 
     <br>
-    <a href="deleta.php">Deletar</a>
+    <a href="deleta.php">Deletar um cliente</a> 
+    <br>
 </body>
 </html>
