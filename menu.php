@@ -7,6 +7,8 @@
     <title>Menu</title>
 </head>
 <body>
+    <a href="consulta.php">Consultar</a>
+    <br>
     <a href="cadastro.php">Cadastrar</a> 
     <br>
     <a href="atualiza.php">Atualizar</a>

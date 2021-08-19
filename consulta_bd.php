@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deleta</title>
+    <title>Consulta</title>
 </head>
 <body>
     <?php
 
     require "conexao.php";
 
-    $id_deleta = $_POST["id_deleta"];
+    $id_consulta = $_POST["id_consulta"];
 
-    $sqld = "DELETE FROM clientes
-    WHERE id = $id_deleta";
+    $sqld = "SELECT * FROM clientes
+    WHERE id = $id_consulta";
 
+    //Arrumar para mostrar os dados do cliente
     if (mysqli_query($con, $sqld)) {
-        echo "Cliente foi deletado(a) com sucesso!";
+        echo "Todos os dados do cliente com o ID $id_consulta";
     }else {
-        echo "Erro ao deletar! " . mysqli_error($con);
+        echo "Erro ao consultar os dados! " . mysqli_error($con);
     }
 
     mysqli_close($con);
