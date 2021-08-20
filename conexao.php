@@ -1,7 +1,7 @@
 <?php
-$servername = "mysql.funarpen.mirasistemas.com.br";
+$servername = "";
 $username = "funarpbr";
-$password = "09funa31";
+$password = "";
 $name_db = "lanchonete_america";
 
 $con = mysqli_connect($servername, $username, $password, $name_db);
