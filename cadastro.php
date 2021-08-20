@@ -7,7 +7,7 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <form method="POST" action="cadastro_bd.php">
+    <form method="POST" action="_banco/cadastro_bd.php">
         <label>Nome:</label> 
         <input type="text" name="nome" placeholder="Nome completo" required> <br>
         <label>CPF:</label>  
@@ -16,13 +16,13 @@
         <input type="email" name="email" placeholder="exemple@exemple.com" required> <br>
         <label>Data de nascimento:</label> 
         <input type="date" name="data" > <br>
-        <label>EndereÃ§o:</label>  
-        <input type="text" name="endereco" placeholder="Digite o endereÃ§o..." > <br>
+        <label>Endereco:</label>  
+        <input type="text" name="endereco" placeholder="Digite o endereco..." > <br>
         <label>Celular:</label>  
         <input type="text" name="celular" placeholder="Digite o telefone celular..."> <br>
         <input type="submit" value="Cadastrar">
     </form>
     <hr>
-    <a href="menu.php">Voltar</a>
+    <a href="menu.php">Voltar para o Menu</a>
 </body>
 </html>

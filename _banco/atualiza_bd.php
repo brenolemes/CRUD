@@ -32,6 +32,6 @@
 
     ?>
     <hr>
-    <a href="menu.php">Voltar</a>
+    <a href="/CRUD/crud/menu.php">Voltar para o Menu</a>
 </body>
 </html>

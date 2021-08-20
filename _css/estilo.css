@@ -21,3 +21,8 @@
     background-color: tomato;
 }
 
+table, th, td {
+    border: 1px solid black;
+    padding: 20px;
+    background-color: floralwhite;
+}

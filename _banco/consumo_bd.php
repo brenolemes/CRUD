@@ -23,6 +23,7 @@
 
     if (mysqli_query($con, $sqli)) {
         echo "cadastro de venda realizada com sucesso!";
+        
     }else {
         echo "Erro ao efetuar o cadastro da venda! " . mysqli_error($con);
     }
@@ -31,7 +32,8 @@
 
     ?>
     <hr>
-    <a href="menu.php">Voltar</a>
+    
+    <a href="/CRUD/crud/menu.php">Voltar para o Menu</a>
 </body>
 </html>
 

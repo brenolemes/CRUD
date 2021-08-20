@@ -10,6 +10,7 @@
     <?php
 
     require "conexao.php";
+
     $cpf = $_POST["cpf"];
     $nome = $_POST["nome"];
     $email = $_POST["email"];
@@ -31,13 +32,10 @@
 
     ?>
     <hr>
-    <a href="menu.php">Voltar</a>
+    <a href="/CRUD/crud/consulta_clientes.php">Consultar cliente cadastrado na tabela</a> <br> <br>
+    <a href="/CRUD/crud/menu.php">Voltar para o Menu</a>
 </body>
 </html>
-
-
-
-
 
 
 

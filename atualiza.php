@@ -7,15 +7,15 @@
     <title>Atualiza</title>
 </head>
 <body>
-    <form method="POST" action="atualiza_bd.php">
+    <form method="POST" action="_banco/atualiza_bd.php">
         <label>Nome:</label> 
         <input type="text" name="nome" placeholder="Digite o nome..." required> <br>
         <label>Email:</label>  
         <input type="email" name="email" placeholder="Digite o email..." required> <br>
         <label>Data de nascimento:</label> 
         <input type="date" name="data" placeholder="Digite a data de nascimento..." > <br>
-        <label>EndereÃ§o:</label>  
-        <input type="text" name="endereco" placeholder="Digite 0 endereÃ§o..." > <br>
+        <label>Endereço:</label>  
+        <input type="text" name="endereco" placeholder="Digite 0 endereço..." > <br>
         <label>Celular:</label>  
         <input type="text" name="celular" placeholder="Digite o telefone celular..."> <br>
         <label>CPF do cliente que deseja atualizar:</label>
@@ -23,6 +23,6 @@
         <input type="submit" value="Atualizar">
     </form>
     <hr>
-    <a href="menu.php">Voltar</a>
+    <a href="menu.php">Voltar para o Menu</a>
 </body>
 </html>

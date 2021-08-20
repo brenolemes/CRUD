@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="consumo">
-        <form action="consumo_bd.php" method="POST">
+        <form action="_banco/consumo_bd.php" method="POST">
             <label>CPF do cliente</label> <br>
             <input type="search" name="cpf"> <br>
             <label>Comida</label> <br>
@@ -29,7 +29,7 @@
             <input id="total" type="text" name="total"> <br>
             <input type="submit" value="Finalizar"> 
             <hr>
-            <a href="menu.php">Voltar</a>
+            <a href="menu.php">Voltar para o Menu</a>
         </form>
     </div>
 </body>

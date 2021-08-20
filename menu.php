@@ -11,7 +11,9 @@
     <div class="menu">
     <a href="consumo.php">Caixa</a>
     <br>
-    <a href="consulta_bd.php">Consultar os dados dos clientes cadastrados</a> 
+    <a href="consulta_clientes.php">Consultar clientes cadastrados</a> 
+    <br>
+    <a href="consulta_consumo.php">Consultar os produtos vendidos</a> 
     <br>
     <a href="cadastro.php">Cadastrar um novo cliente</a> 
     <br>
