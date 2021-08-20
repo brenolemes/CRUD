@@ -18,7 +18,7 @@
     $celular = $_POST["celular"];
 
 
-    $sqli = "INSERT INTO clientes (cpf, nome, email, nascimento, endereco, celular)
+    $sqli = "INSERT INTO Clientes (cpf, nome, email, nascimento, endereco, celular)
     VALUES ('$cpf', '$nome', '$email', '$data', '$endereco', '$celular')";
 
     if (mysqli_query($con, $sqli)) {
@@ -34,6 +34,10 @@
     <a href="menu.php">Voltar</a>
 </body>
 </html>
+
+
+
+
 
 
 

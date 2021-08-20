@@ -11,7 +11,7 @@
 
     require "conexao.php";
 
-    $sqlcon = "SELECT cpf, nome, email, nascimento, endereco, celular FROM clientes";
+    $sqlcon = "SELECT cpf, nome, email, nascimento, endereco, celular FROM Clientes";
 
     $resultado = mysqli_query($con, $sqlcon);
     

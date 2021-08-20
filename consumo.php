@@ -21,7 +21,7 @@
                 <option value="marmita" name="marmita">Marmita</option>
                 <option value="especial_mignon" name="especial_mignon">Especial_mignon</option>
             </select> <br>
-            <label>Preço</label> <br>
+            <label>Preco</label> <br>
             <input id="preco" type="text" name="preco"> <br>
             <label>Quantidade</label> <br>
             <input id ="quantidade" type="number" name="quantidade"> <br>

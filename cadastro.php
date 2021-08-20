@@ -16,8 +16,8 @@
         <input type="email" name="email" placeholder="exemple@exemple.com" required> <br>
         <label>Data de nascimento:</label> 
         <input type="date" name="data" > <br>
-        <label>Endereço:</label>  
-        <input type="text" name="endereco" placeholder="Digite o endereço..." > <br>
+        <label>EndereÃ§o:</label>  
+        <input type="text" name="endereco" placeholder="Digite o endereÃ§o..." > <br>
         <label>Celular:</label>  
         <input type="text" name="celular" placeholder="Digite o telefone celular..."> <br>
         <input type="submit" value="Cadastrar">

@@ -13,10 +13,13 @@
 
     $cpf_deleta = $_POST["cpf_deleta"];
 
-    $sqld = "DELETE FROM clientes
+    $sqld = "DELETE FROM Clientes
     WHERE cpf = $cpf_deleta";
 
-    if (mysqli_query($con, $sqld)) {
+    $sqld1= "DELETE FROM Consumo
+    WHERE cpf_id = $cpf_deleta";
+
+    if (mysqli_query($con, $sqld) OR mysqli_query($con, $sqld1)) {
         echo "Cliente foi deletado(a) com sucesso!";
     }else {
         echo "Erro ao deletar! " . mysqli_error($con);

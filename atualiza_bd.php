@@ -18,7 +18,7 @@
     $celular = $_POST["celular"];
     $cpf = $_POST["cpf"];
 
-    $sqla = "UPDATE clientes 
+    $sqla = "UPDATE Clientes 
     SET nome='$nome', email='$email', nascimento='$data', endereco='$endereco', celular='$celular'
     WHERE cpf = $cpf";
 
