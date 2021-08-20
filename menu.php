@@ -9,14 +9,15 @@
 </head>
 <body>
     <div class="menu">
-        <a href="consulta_bd.php">Consultar os dados dos clientes cadastrados</a> 
-        <br>
-        <a href="cadastro.php">Cadastrar um novo cliente</a> 
-        <br>
-        <a href="atualiza.php">Atualizar um cliente</a> 
-        <br>
-        <a href="deleta.php">Deletar um cliente</a> 
-        <br>
+    <a href="consulta_bd.php">Consultar os dados dos clientes cadastrados</a> 
+    <br>
+    <a href="cadastro.php">Cadastrar um novo cliente</a> 
+    <br>
+    <a href="atualiza.php">Atualizar um cliente</a> 
+    <br>
+    <a href="deleta.php">Deletar um cliente</a> 
+    <br>
+    <a href="consumo.php">Fechar venda</a>
     </div>
 </body>
 </html>

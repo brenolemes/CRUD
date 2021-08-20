@@ -10,7 +10,7 @@
     <?php
 
     require "conexao.php";
-
+    $cpf = $_POST["cpf"];
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $data = $_POST["data"];
@@ -18,8 +18,8 @@
     $celular = $_POST["celular"];
 
 
-    $sqli = "INSERT INTO clientes (nome, email, nascimento, endereco, celular)
-    VALUES ('$nome', '$email', '$data', '$endereco', '$celular')";
+    $sqli = "INSERT INTO clientes (cpf, nome, email, nascimento, endereco, celular)
+    VALUES ('$cpf', '$nome', '$email', '$data', '$endereco', '$celular')";
 
     if (mysqli_query($con, $sqli)) {
         echo "$nome foi cadastrado(a) com sucesso!";

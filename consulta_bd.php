@@ -11,9 +11,10 @@
 
     require "conexao.php";
 
-    $sqlcon = "SELECT id, nome, email, nascimento, endereco, celular FROM clientes";
+    $sqlcon = "SELECT cpf, nome, email, nascimento, endereco, celular FROM clientes";
 
     $resultado = mysqli_query($con, $sqlcon);
+    
 
     while($exibe = mysqli_fetch_row($resultado)) {
         echo "<hr>";

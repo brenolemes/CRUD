@@ -1,0 +1,29 @@
+
+create database lanchonete_america;
+
+use lanchonete_america;
+
+drop database cadastro;
+
+CREATE TABLE Clientes (
+	cpf VARCHAR(11) NOT NULL,
+	nome VARCHAR(30) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	nascimento DATE,
+	endereco VARCHAR(70),
+	celular VARCHAR(20),
+    PRIMARY KEY (cpf)
+);
+
+CREATE TABLE Consumo (
+	id_consumo INT AUTO_INCREMENT NOT NULL,
+    tipo_comida VARCHAR(30),
+    preco DECIMAL(6,2),
+    quantidade BIGINT,
+    total DECIMAL(6,2),
+    cpf_id VARCHAR(11) NOT NULL,
+    PRIMARY KEY (id_consumo),
+    FOREIGN KEY (cpf_id) REFERENCES Clientes(cpf)
+);
+
+select * from Consumo;

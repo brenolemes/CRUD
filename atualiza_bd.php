@@ -16,11 +16,11 @@
     $data = $_POST["data"];
     $endereco = $_POST["endereco"];
     $celular = $_POST["celular"];
-    $id = $_POST["id"];
+    $cpf = $_POST["cpf"];
 
     $sqla = "UPDATE clientes 
     SET nome='$nome', email='$email', nascimento='$data', endereco='$endereco', celular='$celular'
-    WHERE id = $id";
+    WHERE cpf = $cpf";
 
     if (mysqli_query($con, $sqla)) {
         echo "$nome foi atualizado(a) com sucesso!";

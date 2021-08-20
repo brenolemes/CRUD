@@ -9,17 +9,17 @@
 <body>
     <form method="POST" action="atualiza_bd.php">
         <label>Nome:</label> 
-        <input type="text" name="nome" placeholder="Digite seu nome..." required> <br>
+        <input type="text" name="nome" placeholder="Digite o nome..." required> <br>
         <label>Email:</label>  
-        <input type="email" name="email" placeholder="Digite seu email..." required> <br>
+        <input type="email" name="email" placeholder="Digite o email..." required> <br>
         <label>Data de nascimento:</label> 
-        <input type="date" name="data" placeholder="Digite sua data de nascimento..." > <br>
-        <label>EndereÃ§o:</label>  
-        <input type="text" name="endereco" placeholder="Digite seu endereÃ§o..." > <br>
+        <input type="date" name="data" placeholder="Digite a data de nascimento..." > <br>
+        <label>Endereço:</label>  
+        <input type="text" name="endereco" placeholder="Digite 0 endereço..." > <br>
         <label>Celular:</label>  
-        <input type="text" name="celular" placeholder="Digite seu telefone celular..."> <br>
-        <label>ID do cliente que deseja atualizar:</label>
-        <input type="text" name="id">
+        <input type="text" name="celular" placeholder="Digite o telefone celular..."> <br>
+        <label>CPF do cliente que deseja atualizar:</label>
+        <input type="text" name="cpf">
         <input type="submit" value="Atualizar">
     </form>
     <hr>

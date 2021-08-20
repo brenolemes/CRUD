@@ -11,10 +11,10 @@
 
     require "conexao.php";
 
-    $id_deleta = $_POST["id_deleta"];
+    $cpf_deleta = $_POST["cpf_deleta"];
 
     $sqld = "DELETE FROM clientes
-    WHERE id = $id_deleta";
+    WHERE cpf = $cpf_deleta";
 
     if (mysqli_query($con, $sqld)) {
         echo "Cliente foi deletado(a) com sucesso!";
